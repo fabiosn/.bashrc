@@ -117,3 +117,6 @@ export NVM_DIR="/home/$USER/.nvm"
 
 #tab to cycle through autocomplete options
 bind '"\t":menu-complete'
+
+#attach to a tmux session or create a new one
+tmux a || tmux
