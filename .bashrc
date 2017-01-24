@@ -119,7 +119,9 @@ export NVM_DIR="/home/$USER/.nvm"
 bind '"\t":menu-complete'
 
 #attach to a tmux session or create a new one
-tmux a || tmux
+if [ -z "$TMUX" ]; then
+  tmux a || tmux
+fi
 
 #make vim the default editor
 export EDITOR=vim
