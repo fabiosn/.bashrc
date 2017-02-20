@@ -125,3 +125,8 @@ fi
 
 #make vim the default editor
 export EDITOR=vim
+
+#android-studio env variables
+export ANDROID_HOME=${HOME}/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
