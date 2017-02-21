@@ -130,3 +130,7 @@ export EDITOR=vim
 export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+#disable touchpad when typing
+killall syndaemon 2>/dev/null
+syndaemon -i 0.50 -m 0.10 -d -K
